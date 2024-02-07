@@ -170,7 +170,7 @@
     {% if section.settings.header_logo_link != empty %}
       {% assign header_logo_link = section.settings.header_logo_link %}
     {% else %}
-      {%- assign header_logo_link = {{ routes.root_url }} -%}
+      {%- assign header_logo_link = routes.root_url -%}
     {% endif %}
 
     {%- if section.settings.logo_position != 'middle-center' -%}
